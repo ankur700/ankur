@@ -1,0 +1,23 @@
+---
+import { cn } from "@lib/utils";
+
+type Props = {
+  classes?: string;
+  id?: string;
+  ariaLabel?: string;
+};
+
+const { classes, id, ariaLabel, ...rest } = Astro.props;
+---
+
+<button
+  id={id}
+  aria-label={ariaLabel}
+  class={cn(
+    "flex size-9 items-center justify-center rounded border border-black/15 hover:bg-black/5 focus-visible:bg-black/5 dark:border-white/20 dark:hover:bg-white/5 dark:focus-visible:bg-white/5",
+    classes
+  )}
+  {...rest}
+>
+  <slot />
+</button>
