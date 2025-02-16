@@ -6,7 +6,6 @@ demoURL: "#"
 repoURL: "https://github.com/ankur700/noise-blanket"
 ---
 
-# Noise Blanket
 
 #### An extension to help improve your focus & increase your productivity by listening to sounds of nature. Or just fall asleep in a noisy environment.
 

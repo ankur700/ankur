@@ -1,12 +1,11 @@
 ---
 title: "Atmos Terminal Weather"
 description: "Minimal weather forecast in your terminal."
-date: "2024-03-26"
+date: "2025-01-26"
 demoURL: "#"
 repoURL: "https://github.com/ankur700/atmos"
 ---
 
-# Atmos
 
 Atmos is a minimal, free and open source weather app for the linux terminal!
 
