@@ -1,6 +1,6 @@
 ---
 title: "Mastering Laravel Development on Windows: A WSL-powered Guide for Speed and Simplicity"
-description: "In this comprehensive guide, we will walk you through the steps to establish a lightning-fast development environment for Laravel on your Windows system using WSL."
+description: "In this comprehensive guide, i will walk you through the steps to establish a lightning-fast development environment for Laravel on your Windows system using WSL."
 date: "2023-04-04"
 ---
 
@@ -13,6 +13,7 @@ Make sure your Windows version Windows 10, Version 2004 or higher(**Build 19041*
 You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in **administrator** mode by right-clicking and selecting "Run as administrator", enter the wsl --install command, then restart your machine.
 
 ```powershell
+# This command will install wsl and ubuntu distro in wsl
 wsl --install
 ```
 
@@ -48,13 +49,13 @@ sudo apt-get update
 
 Now we are ready to start setting up our Linux development environment. Lets start with installing some useful tools and utilities
 
-###Utilities
+### Utilities
 
 ```bash
 sudo apt-get install ca-certificates apt-transport-https software-properties-common
 ```
 
-###Tools
+### Tools
 
 ```bash
 sudo apt install git curl openssl wget micro gnupg2 fzf jq unzip zip
@@ -62,7 +63,7 @@ sudo apt install git curl openssl wget micro gnupg2 fzf jq unzip zip
 
 ## PHP
 
-Install PHP, phpMyAdmin and extensions required for Laravel. If you don't require php8.3 then use the default php8.1 by only using the last command and replace php8.3 with PHP like - <font color="#e36c09">sudo apt-get install php php-cli php-common</font>.
+Install PHP, phpMyAdmin and extensions required for Laravel. If you don't require php8.3 then use the default php8.1 by only using the last command and replace php8.3 with PHP like - `sudo apt-get install php php-cli php-common`.
 
 ```bash
 # Add Ondrej's PPA for php8.3
@@ -71,7 +72,7 @@ sudo apt-get update
 sudo apt-get install php8.3 php8.3-cli php8.3-common
 ```
 
-To check the version of PHP installed use the command: <font color="#e36c09">php -v</font>
+To check the version of PHP installed use the command: `php -v`
 
 ```bash
 php -v
@@ -90,7 +91,7 @@ sudo apt install php8.3-{bcmath,curl,fpm,mysql,mbstring,xml,zip}
 
 ```
 
-To check loaded PHP modules use the command: <font color="#e36c09">php -m</font>
+To check loaded PHP modules use the command: `php -m`
 
 ```bash
 php -m
@@ -179,7 +180,7 @@ valet install
 valet park
 
 # Change default TLD from .test to .localhost or .app
-valet doman localhost
+valet domain localhost
 
 # To use HTTPS
 valet secure example
@@ -207,6 +208,8 @@ This could be a personal choice, you can use VSCODE or NVIM. or any other IDE yo
 
 Install VSCODE for windows if you don't already have it installed we will also need the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [Learn more](https://code.visualstudio.com/docs/remote/wsl).
 
+## Optional goodies
+
 ### [NVIM](https://neovim.io/)
 
 ```bash
@@ -214,7 +217,7 @@ Install VSCODE for windows if you don't already have it installed we will also n
 sudo apt install neovim
 ```
 
-To use the latest version on neovim we will have to add the unstable version PPA.
+To use the latest version of neovim we will have to add the unstable version PPA.
 
 ```bash
 sudo add-apt-repository ppa:neovim-ppa/unstable

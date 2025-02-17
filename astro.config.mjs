@@ -11,7 +11,12 @@ export default defineConfig({
   integrations: [tailwind(), sitemap(), mdx(), pagefind()],
   markdown: {
     shikiConfig: {
-      theme: "css-variables",
+      theme: "dracula",
+      themes: {
+        light: 'github-light',
+        dark: 'github-dark',
+      },
+      wrap: true,
     },
   },
 });
